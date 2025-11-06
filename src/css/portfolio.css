@@ -1,0 +1,36 @@
+/* Default: hide both by default (mobile <560px) */
+.name-large,
+.name-small {
+    display: none;
+}
+
+@media (min-width: 570px) and (max-width: 760px) {
+    .name-small {
+        display: block;
+        font-weight: bold;
+        font-size: 2rem;
+        background: linear-gradient(to right, #3b82f6, #8b5cf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .name-large {
+        display: none;
+    }
+}
+
+@media (min-width: 760px) {
+    .name-large {
+        display: block;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: linear-gradient(to right, #3b82f6, #8b5cf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 1s;
+    }
+
+    .name-small {
+        display: none;
+    }
+}
